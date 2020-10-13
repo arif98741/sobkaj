@@ -36,6 +36,21 @@ return [
     */
 
     'guards' => [
+        'jobprovider' => [
+            'driver' => 'session',
+            'provider' => 'jobproviders',
+        ],
+
+        'jobseeker' => [
+            'driver' => 'session',
+            'provider' => 'jobseekers',
+        ],
+
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -66,6 +81,21 @@ return [
     */
 
     'providers' => [
+        'jobproviders' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Jobprovider::class,
+        ],
+
+        'jobseekers' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Jobseeker::class,
+        ],
+
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
+
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
@@ -93,6 +123,24 @@ return [
     */
 
     'passwords' => [
+        'jobproviders' => [
+            'provider' => 'jobproviders',
+            'table' => 'jobprovider_password_resets',
+            'expire' => 60,
+        ],
+
+        'jobseekers' => [
+            'provider' => 'jobseekers',
+            'table' => 'jobseeker_password_resets',
+            'expire' => 60,
+        ],
+
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'admin_password_resets',
+            'expire' => 60,
+        ],
+
         'users' => [
             'provider' => 'users',
             'table' => 'password_resets',

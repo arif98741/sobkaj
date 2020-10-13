@@ -46,7 +46,51 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapJobproviderRoutes();
+
+        $this->mapJobseekerRoutes();
+
+        $this->mapAdminRoutes();
+
         //
+    }
+
+    /**
+     * Define the "jobseeker" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapJobseekerRoutes()
+    {
+        Route::group([
+            'middleware' => ['web', 'jobseeker', 'auth:jobseeker'],
+            'prefix' => 'jobseeker',
+            'as' => 'jobseeker.',
+            'namespace' => $this->namespace,
+        ], function ($router) {
+            require base_path('routes/jobseeker.php');
+        });
+    }
+
+    /**
+     * Define the "jobprovider" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapJobproviderRoutes()
+    {
+        Route::group([
+            'middleware' => ['web', 'jobprovider', 'auth:jobprovider'],
+            'prefix' => 'jobprovider',
+            'as' => 'jobprovider.',
+            'namespace' => $this->namespace,
+        ], function ($router) {
+            require base_path('routes/jobprovider.php');
+        });
     }
 
     /**
@@ -61,6 +105,19 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/web.php'));
+    }
+
+    protected function mapAdminRoutes()
+    {
+        //TODO:: this middleware security should be removed in future
+        Route::group([
+            'middleware' => ['web', 'admin', 'auth:admin'],
+            'prefix' => 'admin',
+            'as' => 'admin.',
+            'namespace' => $this->namespace,
+        ], function ($router) {
+            require base_path('routes/admin.php');
+        });
     }
 
     /**
