@@ -2,35 +2,36 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'admin'], function () {
-  Route::get('/login', 'Admin\Auth\LoginController@showLoginForm')->name('login');
-  Route::post('/login', 'Admin\Auth\LoginController@login');
-  Route::post('/logout', 'Admin\Auth\LoginController@logout')->name('logout');
 
-  Route::get('/register', 'Admin\Auth\RegisterController@showRegistrationForm')->name('register');
-  Route::post('/register', 'Admin\Auth\RegisterController@register');
-
-  Route::post('/password/email', 'Admin\Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.request');
-  Route::post('/password/reset', 'Admin\Auth\ResetPasswordController@reset')->name('password.email');
-  Route::get('/password/reset', 'Admin\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
-  Route::get('/password/reset/{token}', 'Admin\Auth\ResetPasswordController@showResetForm');
+Route::get('/admin', function () {
+    return redirect('admin/login');
 });
 
+
+Route::get('/jobseeker', function () {
+    return redirect('jobseeker/login');
+});
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/login', 'Admin\Auth\LoginController@showLoginForm')->name('login');
+    Route::post('/login', 'Admin\Auth\LoginController@login');
+    Route::post('/logout', 'Admin\Auth\LoginController@logout')->name('logout');
+
+    Route::get('/register', 'Admin\Auth\RegisterController@showRegistrationForm')->name('register');
+    Route::post('/register', 'Admin\Auth\RegisterController@register');
+
+    Route::post('/password/email', 'Admin\Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.request');
+    Route::post('/password/reset', 'Admin\Auth\ResetPasswordController@reset')->name('password.email');
+    Route::get('/password/reset', 'Admin\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
+    Route::get('/password/reset/{token}', 'Admin\Auth\ResetPasswordController@showResetForm');
+});
+
+/*
 Route::group(['prefix' => 'jobseeker'], function () {
   Route::get('/login', 'Jobseeker\Auth\LoginController@showLoginForm')->name('login');
   Route::post('/login', 'Jobseeker\Auth\LoginController@login');
@@ -44,7 +45,9 @@ Route::group(['prefix' => 'jobseeker'], function () {
   Route::get('/password/reset', 'Jobseeker\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
   Route::get('/password/reset/{token}', 'Jobseeker\Auth\ResetPasswordController@showResetForm');
 });
+*/
 
+/*
 Route::group(['prefix' => 'jobprovider'], function () {
   Route::get('/login', 'Jobprovider\Auth\LoginController@showLoginForm')->name('login');
   Route::post('/login', 'Jobprovider\Auth\LoginController@login');
@@ -57,4 +60,4 @@ Route::group(['prefix' => 'jobprovider'], function () {
   Route::post('/password/reset', 'Jobprovider\Auth\ResetPasswordController@reset')->name('password.email');
   Route::get('/password/reset', 'Jobprovider\Auth\ForgotPasswordController@showLinkRequestForm')->name('password.reset');
   Route::get('/password/reset/{token}', 'Jobprovider\Auth\ResetPasswordController@showResetForm');
-});
+});*/

@@ -116,6 +116,8 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/alaminfirdows/laravel-multi-auth" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iobcKKmh744fxDdPfSTBopMJuv" />
@@ -126,11 +128,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/auth" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\sobkaj\resources\views\admin\auth" />
+      <recent name="C:\xampp\htdocs\sobkaj\database\factories" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -160,5 +168,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="385" y="45" width="810" height="786" key="StructurePopup/0.0.1600.860@0.0.1600.860" timestamp="1602589413795" />
+    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1602590788047">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602590788047" />
   </component>
 </project>
