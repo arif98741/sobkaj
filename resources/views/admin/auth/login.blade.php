@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<!--
-* CoreUI - Free Bootstrap Admin Template
-* @version v3.2.0
-* @link https://coreui.io
-* Copyright (c) 2020 creativeLabs Łukasz Holeczek
-* Licensed under MIT (https://coreui.io/license)
--->
+
 <html lang="en">
 <head>
     <base href="./">
@@ -101,6 +95,5 @@
 <!--[if IE]><!-->
 <script src="{{ asset('assets/admin/vendors/@coreui/icons/js/svgxuse.min.js')}}"></script>
 <!--<![endif]-->
-
 </body>
 </html>
