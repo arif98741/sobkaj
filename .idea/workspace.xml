@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="866416d1-7140-498b-b509-702eb82bfb28" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceTypeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/ServiceType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ServiceTypeFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_051822_create_service_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/lib/sidebar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/ServiceFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_122211_create_services_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/admin/js/notify.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/layout/master.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/lib/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/lib/footer_js.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/lib/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/lib/header_css.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service-type/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service-type/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/service-type/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sobkaj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sobkaj.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceTypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ServiceTypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ServiceType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ServiceType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_114847_create_jobseekers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_114847_create_jobseekers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_114909_create_jobproviders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_114909_create_jobproviders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_14_051822_create_service_types_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_14_051822_create_service_types_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/lib/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/lib/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,6 +159,7 @@
       <path value="$PROJECT_DIR$/vendor/alaminfirdows/laravel-multi-auth" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
       <path value="$PROJECT_DIR$/vendor/yajra/laravel-datatables-oracle" />
+      <path value="$PROJECT_DIR$/vendor/yoeunes/toastr" />
     </include_path>
   </component>
   <component name="ProjectId" id="1iobcKKmh744fxDdPfSTBopMJuv" />
@@ -156,7 +174,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers/Admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/admin/service-type" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -167,6 +185,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\sobkaj\resources\views\admin\service-type" />
+      <recent name="C:\xampp\htdocs\sobkaj\resources\views\admin" />
       <recent name="C:\xampp\htdocs\sobkaj\app\Http\Controllers\Admin" />
       <recent name="C:\xampp\htdocs\sobkaj\resources\views\admin\auth" />
       <recent name="C:\xampp\htdocs\sobkaj\database\factories" />
@@ -192,6 +212,9 @@
       <workItem from="1602597534653" duration="866000" />
       <workItem from="1602649274408" duration="4581000" />
       <workItem from="1602659214867" duration="528000" />
+      <workItem from="1602660104526" duration="5613000" />
+      <workItem from="1602667319138" duration="3200000" />
+      <workItem from="1602673023636" duration="4566000" />
     </task>
     <servers />
   </component>
@@ -202,17 +225,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="58" y="0" key="SettingsEditor" timestamp="1602659399128">
+    <state x="246" y="0" width="1235" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602663907731">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="58" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1602659399128" />
-    <state x="385" y="45" width="810" height="786" key="StructurePopup" timestamp="1602589413795">
+    <state x="246" y="0" width="1235" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1602663907731" />
+    <state x="58" y="0" key="SettingsEditor" timestamp="1602664884463">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="385" y="45" width="810" height="786" key="StructurePopup/0.0.1600.860@0.0.1600.860" timestamp="1602589413795" />
-    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1602659444816">
+    <state x="58" y="0" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1602664884463" />
+    <state x="385" y="45" width="810" height="786" key="StructurePopup" timestamp="1602670935394">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602659444816" />
+    <state x="385" y="45" width="810" height="786" key="StructurePopup/0.0.1600.860@0.0.1600.860" timestamp="1602670935394" />
+    <state x="361" y="-2" width="832" height="812" key="find.popup" timestamp="1602677492967">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="361" y="-2" width="832" height="812" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1602677492967" />
+    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup" timestamp="1602677572845">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="293" y="-2" width="1009" height="1470" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1602677572845" />
   </component>
 </project>

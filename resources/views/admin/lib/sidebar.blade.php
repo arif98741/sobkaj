@@ -23,10 +23,10 @@
                 </svg>
                 Service Type</a>
             <ul class="c-sidebar-nav-dropdown-items">
-                <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/breadcrumb.html"><span
-                            class="c-sidebar-nav-icon"></span> Service List</a></li>
-                <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="base/cards.html"><span
-                            class="c-sidebar-nav-icon"></span> Add Service</a></li>
+                <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('admin.service-type.index') }}"><span
+                            class="c-sidebar-nav-icon"></span> Service Type List</a></li>
+                <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="{{ route('admin.service-type.create') }}"><span
+                            class="c-sidebar-nav-icon"></span> Add Service Type</a></li>
 
             </ul>
         </li>

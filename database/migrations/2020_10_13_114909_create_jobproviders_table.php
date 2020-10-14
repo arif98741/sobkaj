@@ -15,8 +15,12 @@ class CreateJobprovidersTable extends Migration
         Schema::create('jobproviders', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('gender', 10);
+            $table->date('birthdate');
             $table->string('email')->unique();
-            $table->string('password');
+            $table->string('mobile', 15);
+            $table->string('provider_as', 35);
+            $table->string('nid', 50)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

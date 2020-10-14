@@ -22,7 +22,7 @@ class AdminController extends Controller
         $data = [
 
         ];
-        return view('admin.home')->with($data);
+        return view('admin.dashboard')->with($data);
     }
 
     public function setting(Request $request)
